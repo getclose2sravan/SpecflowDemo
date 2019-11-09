@@ -9,6 +9,7 @@ Scenario: Successful login with valid credentials
 	And Navigate to appropriate login page
 	When I enter my username and password
 	Then Successful login message should be displayed
+	Then I verify the username on the login screen
 
 Scenario: Successful Logout
 	When user logout from the application

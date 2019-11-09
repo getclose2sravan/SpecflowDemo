@@ -53,5 +53,12 @@ namespace SpecflowDemo.Steps
         {
             true.Equals(driver.FindElement(By.Id("btn_submit")).Displayed);
         }
+
+        [Then(@"I verify the username on the login screen")]
+        public void ThenIVerifyTheUsernameOnTheLoginScreen()
+        {
+            Assert.Equals(driver.FindElement(By.ClassName("UserName")).Text, "RajKumar");
+        }
+
     }
 }
